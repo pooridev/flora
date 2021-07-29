@@ -1,0 +1,95 @@
+.ServiceContainer__column{
+    .ServiceCard:nth-child(2n+1) {
+       display: flex;
+       flex-direction: row;
+       @include respond(big-phone) {
+        flex-direction: column;
+    }
+       .ServiceCard__textbox{
+           margin-left: 30px;
+           @include respond(big-phone) {
+            margin-left: 0;
+            margin-top: 10px;
+
+        }
+       }
+    }
+    .ServiceCard:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        @include respond(big-phone) {
+            flex-direction: column;
+        }
+        .ServiceCard__textbox{
+            margin-right: 30px;
+            @include respond(big-phone) {
+                margin-right: 0;
+                margin-top: 10px;
+            }
+        }
+     }
+     .ServiceCard{
+         margin: 30px 0;
+         text-align: left;
+         padding: 20px 0;
+         &:not(:last-child){
+             border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4);}
+
+         img{
+             width: 400px;
+             @include respond(big-phone) {
+              width: 100%;
+            }
+         }
+         &__textbox{
+             h4{
+                font-family: Glacial Indifference;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 46px;
+                line-height: 54px;
+                color: #222F2B;
+                
+             }
+             p{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                 color: #777777;
+                 margin: 30px 0;
+                 width: 60%;
+                 @include respond(big-phone) {
+                    width: 90%;
+                  }
+             }
+         }
+     }
+}
+.ServiceContainer__header{
+    border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4);
+    padding: 15px 0;
+    margin-top: 40px;
+    text-align: left;
+    h3{
+        font-family: Glacial Indifference;
+font-style: normal;
+font-weight: normal;
+font-size: 38px;
+line-height: 46px;
+
+
+color: #222F2B;
+    }
+    p{
+        font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+margin-top: 20px;
+color: #777777;
+    }
+}

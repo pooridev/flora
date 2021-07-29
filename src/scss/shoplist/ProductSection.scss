@@ -1,0 +1,173 @@
+.ProductSection{
+    margin: 30px 0;
+   
+    h2{
+        text-align: left;
+    font-size: 38px;
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    margin: 20px 0;
+
+    }
+    &-main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:40px 0;
+    }
+}
+.order-complete-div{
+    padding-bottom: 60px;
+    border-bottom: 0.5px solid #7777773d;
+}
+.CardNav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 30px 15px;
+    overflow-y: auto;
+    width: 0;
+}
+.cardnav_back{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3d3c3c21;
+    z-index: 9999999999;
+}
+.CardNav__container{
+    .ProductdetailInfo__countBox {
+
+        margin: 13px 0;
+    }
+    .CardNav__header{
+        border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4);
+        padding: 15px 0;
+        text-align: left;
+        h2{
+            font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 48px;
+    color: #4D6B62;
+        }
+    }
+    
+}
+.CardNav_close{
+    position: absolute;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #222F2B;
+    right: 15px;
+    top: 30px;
+    cursor: pointer;
+    i{
+        margin-right: 10px;
+    }
+}
+.CardNavCard{
+    &:not(:last-child){
+        border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4);
+
+    }
+    padding: 15px 15px;
+   img{
+       width: 50px;
+   }
+    &__info{
+      margin-left: 10px;
+      h3{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+       text-align: left;
+        
+        color: #222F2B;
+        
+      }
+    }
+    &__price{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #9AB7AE;
+        
+    }
+}
+.CardNav__cost{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.5px solid rgba($color: #999999, $alpha: 0.4);
+    padding: 15px 15px;
+    font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #222F2B;
+    &-price{
+        
+color: #9AB7AE;
+    }
+}
+.CardNav__footer{
+    display: flex;
+    flex-direction: column;
+    .green_btn{
+     background-color: #83B735   ;
+     margin-top: 10px;
+    }
+}
+.CardNav__btn{
+    width: 100%;
+
+
+
+    
+}
+.CardNav.cardnav__true{
+   
+    width: 30vw;
+    animation: widthincrease 0.39s ease-in-out;
+    animation-iteration-count: 1;
+
+    @include respond(big-phone) {
+        width: 80vw;      }
+
+}
+.CardNav.cardnav__false{
+    
+    width: 0;
+    animation: widthdecrease 0.39s ease-in-out;
+    animation-iteration-count: 1;
+    padding: 0;
+
+}
+@keyframes widthincrease {
+    0%{
+       width: 0;
+    }
+
+    100%{
+        width: 30vw;
+    }
+}
+@keyframes widthdecrease {
+    0%{
+       width: 30vw;
+    }
+
+    100%{
+        width: 0;
+    }
+}

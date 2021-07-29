@@ -1,0 +1,26 @@
+.SectionTitle {
+    text-align: center;
+    margin: 20px 0;
+    &__pre{
+        font-family: Lato ;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #A5A5A5;
+    }
+    &__sub{
+        font-family: Lato ;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #777777;
+    }
+    h3{
+        font-size: 32px;
+        font-family: Glacial Indifference;
+        font-style: normal;
+        font-weight: normal;
+        color: #242424;
+        margin: 5px;
+    }
+}

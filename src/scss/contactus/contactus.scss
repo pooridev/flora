@@ -1,0 +1,74 @@
+.ContactusInfo__information{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+.ContactusInfoBox{
+    padding:20px 0 ;
+    border-bottom: 0.5px solid rgba($color: #999999, $alpha:0.4);
+    margin-bottom: 15px;
+    width: 100%;
+    &__flexbox{
+        display: flex;
+        align-items: flex-start;
+    }
+    img{
+        margin-right: 10px;
+    }
+    &__title{
+        font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #222F2B;
+
+    }
+    &__text{
+        font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #999999;
+    }
+}
+.ContactusInfo-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+    grid-gap: 50px;
+    margin: 87px 0;
+    @include respond(big-phone) {
+        grid-template-columns: 1fr;
+    }
+    button{
+        margin-top: 15px;
+    }
+   .ContactusInfo__inputbox{
+        width: 100%;
+       
+    }
+}
+.cart-title{
+    h2{
+        font-family: Glacial Indifference;
+font-style: normal;
+font-weight: normal;
+font-size: 68px;
+line-height: 76px;
+color: #4D6B62;
+
+    }
+}
+.header_title{
+    h2{
+        font-family: Glacial Indifference;
+font-style: normal;
+font-weight: normal;
+font-size: 68px;
+line-height: 76px;
+color: #4D6B62;
+
+    }
+}

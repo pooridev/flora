@@ -1,0 +1,87 @@
+.accordion-item {
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+    border-bottom: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+
+  }
+  
+  .accordion-item.collapsed {
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  }
+  
+  .accordion-title {
+    font-weight: 600;
+    cursor: pointer;
+    color: #666;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222F2B;
+    text-align: left;
+    &:hover,
+    &.open {
+      color: black;
+    }
+  
+    &.open {
+    
+    }
+  }
+  
+  .accordion-content {
+    padding: 1em 1em;
+  }
+  .FaqContainer__heading{
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 48px;
+    color: #222F2B;
+    text-align: center;
+    border-bottom: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+    margin-bottom: 30px;
+    
+  }
+  .FaqContainer{
+      display: flex;
+      margin: 50px 0;
+      @include respond(big-phone) {
+flex-direction: column;    }
+  }
+  .FaqContainer__box{
+      padding: 10px 20px;
+      @include respond(big-phone) {
+        padding: 10px 0;
+      }
+  }
+  .FaqContainer__box1{
+    border-right: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+    @include respond(big-phone) {
+      border-right: 0.5px solid rgba($color: #fff, $alpha: 0.4);
+    }
+}
+.accordion-content{
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+text-align: left;
+color: #777777;
+
+}
+.xs-opacity0{
+  @include respond(big-phone) {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.ProductHeader{
+    font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+
+color: #374D47;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+}
+.mr-left-25{
+    margin-left: 25px;
+}
+.ProductHeader__img{
+img{
+    margin:0 5px;
+
+}
+}

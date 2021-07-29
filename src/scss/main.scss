@@ -1,0 +1,83 @@
+@import './index.scss';
+@import './Abstracts/mixin';
+@import './Abstracts/variables';
+
+
+/////common
+@import './common/Btn.scss';
+@import './common/menu.scss';
+@import './common/Footer.scss';
+@import './common/SectionTitle.scss';
+@import './common/Productcard.scss';
+@import './common/headerShowcase.scss';
+@import './common/login.scss';
+
+
+
+
+
+///////home
+
+@import './home/BestService.scss';
+@import './home/FeaturedProduct.scss';
+@import './home/HomePic.scss';
+@import './home/HomeSliderShowcas.scss';
+@import './home/InstagramStory.scss';
+@import './home/Logosbar.scss';
+@import './home/NewPost.scss';
+@import './home/NewProduct.scss';
+@import './home/Propertiesbar.scss';
+
+///productDetail
+
+@import './productdetail/ProducDetailLikPriduct.scss';
+@import './productdetail/ProductDetailImage.scss';
+@import './productdetail/ProductdetailInfo.scss';
+@import './productdetail/ProductDetailTab.scss';
+@import './productdetail/SimilarProduct.scss';
+//shoplist
+
+@import './shoplist/OrderPayment.scss';
+@import './shoplist/OrderTable.scss';
+@import './shoplist/ProductSection.scss';
+
+//checkout
+@import './checkout/Checkout.scss';
+
+@import './OrderComplete/ordercomplete.scss' ;
+
+
+@import './Testimonials/UserCommentGrid.scss';
+@import './Testimonials/UserCommentSlider.scss';
+
+
+@import './contactus/contactus.scss';
+
+
+@import './ourstory/ourstory.scss';
+
+
+@import './faq/FAQ.scss';
+
+
+@import './services/services.scss';
+
+@import './Rang/FilterByPrice.scss';
+@import './Rang/Completerang.scss';
+@import './Rang/FilterByBoxSize.scss';
+@import './Rang/FilterByCategory.scss';
+@import './Rang/FilterByColor.scss';
+@import './Rang/Pagination.scss';
+@import './Rang/ProductByStatus.scss';
+@import './Rang/ProductGrid.scss';
+@import './Rang/ProductHeader.scss';
+@import './Rang/TopRatedProduct.scss';
+
+@import './wishList/wishlist.scss'
+
+
+
+
+
+
+

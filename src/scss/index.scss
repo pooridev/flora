@@ -1,0 +1,105 @@
+@import './Abstracts/variables';
+@import './Abstracts/mixin';
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html,body{
+  max-width: 100vw;
+    height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.container-x {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1222px;
+  @include respond(big-phone) {
+    max-width: 600px;
+  }
+  @include respond(phone) {
+    max-width: 500px;
+  }
+  @include respond(small-phone) {
+    max-width: 400px;
+  }
+  @include respond(smallest-phone) {
+    max-width: 350px;
+  }
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: right;
+  margin: 0 auto;
+  
+}
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  max-width: 1222px;
+  @include respond(big-phone) {
+    max-width: 600px;
+  }
+  @include respond(phone) {
+    max-width: 500px;
+  }
+  @include respond(small-phone) {
+    max-width: 400px;
+  }
+  @include respond(smallest-phone) {
+    max-width: 350px;
+  }
+  
+}
+
+.list {
+  list-style: none;
+}
+.btn{
+  outline: none;
+  border: none;
+  &:focus{
+    outline: none;
+    border: none;
+  }
+}
+a,
+a:link {
+  text-decoration: none;
+}
+.relative {
+  position: relative;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.d-flex-re {
+  flex-direction: row-reverse;
+}
+.d-flex-spacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.column-center {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+}
+
+div#root {
+  overflow-x: hidden;
+}

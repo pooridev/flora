@@ -1,0 +1,87 @@
+.PictureInfoBox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 15px;
+    background-color: $Primary__color;
+    font-family: Glacial Indifference;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 999;
+h3{
+    font-size: 32px;
+    font-weight: normal;
+    color: #fff;
+}
+}
+
+.a_withborder{
+color: #fff;   
+text-decoration: underline!important;
+font-family: Lato ;
+font-style: normal;
+font-weight: bold;
+}
+.HomePic__box{
+    position: relative;
+     cursor: pointer;
+     img{
+        cursor: pointer!important;
+
+     }
+}
+.HomePic{
+    &__sec{
+        padding: 20px 0;
+         display: grid;
+         grid-template-columns: 3fr 1fr 3fr;
+         grid-template-rows: repeat(2, 218px);
+         grid-gap: 22px;
+         justify-items: flex-start;
+         @include respond(big-phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.5fr 1fr 1fr;
+
+        } 
+    }
+}
+.HomePic__box{
+    overflow: hidden;
+}
+.HomePic__box.HomePic__box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    @include respond(big-phone) {
+        grid-column: 1;
+        grid-row: 1;
+
+    } 
+    img{
+       // width: 58.1rem;
+    }
+}
+.HomePic__box.HomePic__box2,.HomePic__box3{
+   img{
+    width: 41rem;   }
+}
+.PictureInfoBox.PictureInfoBox__1 {
+    width: 294px;
+    height: 150px;
+    @include respond(big-phone) {
+        width: 100%;
+
+    } 
+}
+.PictureInfoBox.PictureInfoBox__2{
+    width: 208px;
+height: 141px;
+@include respond(big-phone) {
+    width: 100%;
+
+} 
+}

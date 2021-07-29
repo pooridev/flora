@@ -1,0 +1,41 @@
+.ProducDetailLikPriduct {
+    margin: 40px 0;
+    h3{
+        font-family: Glacial Indifference;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #222F2B;
+        text-align: left;
+        width: max-content;
+        margin-bottom: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            background-color: #B8CCC6;
+            height: 2px;
+            width: 90%;
+            position: absolute;
+            bottom: -10px;
+        }
+    }
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 8px;
+        padding: 0;
+        cursor: pointer;
+        transition: width 0.4s ease-in-out;
+        margin-top: 20px;
+    }
+    li.slick-active {
+        width: 20px;
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 10px;
+       
+    }
+}

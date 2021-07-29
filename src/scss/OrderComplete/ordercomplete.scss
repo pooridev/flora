@@ -1,0 +1,39 @@
+.new__article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    @include respond(big-phone) {
+        grid-template-columns:1fr;
+    }
+}
+.order-complete{
+    text-align: left;
+    h1{
+        font-family: Glacial Indifference;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 46px;
+        color: #222F2B;
+        margin-top: 10px;
+
+    }
+    &-p{
+        font-family: Glacial Indifference;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #222F2B;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    a{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: #7CA196;
+    }
+}

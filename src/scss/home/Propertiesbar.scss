@@ -1,0 +1,65 @@
+.Propertiesbar{
+    padding: 28px 0;
+    &__sec {
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+}
+.PropertiesbarItem{
+    .PropertiesbarItem__imagebox{
+        width: 51px;
+      img{
+    width: 48px;
+    }  
+    }
+    .PropertiesbarItem__textbox {
+        text-align: left;
+        margin-left: 12.22px;
+    }
+    p{
+        font-size: 16px;
+        color: #242424;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    a{
+        font-size: 15px;
+        color: #777777;
+    }
+}
+}
+
+.PhonepropertiesBar{
+    margin-bottom: 20px;
+    .PropertiesbarItem{
+        .PropertiesbarItem__imagebox{
+            width: 51px;
+          img{
+        width: 48px;
+        }  
+        }
+        .PropertiesbarItem__textbox {
+            text-align: left;
+            margin-left: 12.22px;
+        }
+        p{
+            font-size: 16px;
+            color: #242424;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+        a{
+            font-size: 15px;
+            color: #777777;
+        }
+    }
+}
+img.slider-arrow.phone-right-arrow-slider {
+    right: -19px;
+    width: 10px;
+}
+img.slider-arrow.phone-left-arrow-slider {
+    left: -19px;
+    width: 10px;
+
+}

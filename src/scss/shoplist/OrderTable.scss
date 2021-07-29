@@ -1,0 +1,48 @@
+.ShopList__order{
+    display: flex;
+    @include respond(big-phone) {
+     flex-direction: column;
+    }
+}
+.OrderTable{
+    &__header{
+        display: grid;
+        grid-template-columns: 4fr 2fr 2fr 1fr 2fr;
+        font-family: Glacial Indifference;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #222F2B;
+        padding: 10px 0;
+        justify-items: flex-start;
+        grid-column-gap: 10px;
+
+    }
+    &__body--box{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        padding: 10px 0;
+        justify-items: flex-start;
+        border-top: 0.5px solid #7777774f;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: 4fr 2fr 2fr 1fr 2fr;
+        }
+        .OrderTable__body--name{
+            display: flex;
+            align-items: center;
+            p{
+                text-align: left;
+                white-space: nowrap;
+                @include respond(big-phone) {
+                    white-space: pre-line;
+                }
+            }
+        }
+}
+p.OrderTable__body--price {
+    display: flex;
+    align-items: center;
+}
