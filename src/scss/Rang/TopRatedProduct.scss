@@ -1,0 +1,53 @@
+.TopRatedProduct-name {
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #222F2B;
+  margin-left: 5px;
+
+}
+
+.TopRatedProduct-cart {
+  margin: 10px 0;
+
+  img {
+    margin-right: 8px;
+  }
+}
+
+.cost-line {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.price-line {
+  text-decoration: line-through;
+
+}
+
+.price-line-cost {
+  color: #374D47;
+  margin: 0 3px;
+  font-size: 12px;
+
+}
+
+.tipe-line {
+  color: #777777;
+}
+
+.tipe-line-cost {
+  margin: 0 3px;
+  font-size: 12px;
+}
+
+.TopRatedProduct {
+  padding: 10px 0;
+}

@@ -1,0 +1,110 @@
+.lostpass {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  color: #ACC7BF;
+  font-size: 14px;
+}
+
+.social--login {
+  display: flex !important;
+  flex-direction: column !important;
+  padding-bottom: 15px !important;
+  border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4) !important;
+
+  .social-login-header {
+    width: 100% !important;
+
+    p {
+      font-family: Lato !important;
+      font-style: normal !important;
+      font-weight: bold !important;
+      color: #222F2B !important;
+      font-size: 14px !important;
+      white-space: nowrap !important;
+      margin: 0 16px !important;
+    }
+
+    .social--login--line {
+      height: 0.5px;
+      width: 100%;
+      background-color: rgba($color: #999999, $alpha: 0.4);
+    }
+  }
+
+  .social-btn {
+    margin: 15px 0 !important;
+    padding: 15px 0 !important;
+    font-family: Lato !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    color: #222F2B !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF !important;
+
+    .login-icon {
+      width: 25px !important;
+      height: 25px !important;
+      background-color: #FFFFFF !important;
+      border-radius: 3px !important;
+      position: absolute !important;
+      left: 21px !important;
+      top: 10px !important;
+    }
+    span {
+      padding: 0 !important;
+      font-weight: bold !important;
+      width: 100%;
+    }
+  }
+
+}
+
+.login-icon-facebook {
+  background-color: #3B5998;
+
+  i {
+    color: #3B5998;
+    font-size: 22px;
+    transform: translateY(3px);
+
+  }
+}
+
+.login-icon-gmail {
+  background-color: #4285F4 !important;
+}
+.login-icon-gmail:hover {
+  background-color: #4285F4 !important;
+}
+.logincard__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  i {
+    font-size: 102px;
+    color: #EDEDED;
+    margin: 10px 0;
+  }
+}
+
+.noaccountyet {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  color: #222F2B;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.createanaccount {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  color: #222F2B;
+  font-size: 13px;
+  border-bottom: 2px solid $Primary__color;
+  padding: 5px 0;
+}

@@ -1,0 +1,74 @@
+
+.Filter-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  margin: 0 10px;
+  color: #374D47;
+
+}
+
+.flex-column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.Completerang-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 40px 0;
+  @include respond(big-phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba($color: #999999, $alpha: 0.4);
+
+}
+
+.Completerang-filter {
+  @include respond(big-phone) {
+    display: none;
+  }
+}
+
+.ResponsiveFilter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  background: #FFF;
+  z-index: 99999999;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding: 10px;
+  animation: height 0.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.closeNav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  i {
+    font-size: 16px;
+  }
+}
+
+@keyframes height {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60vw;
+  }
+}

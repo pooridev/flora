@@ -1,0 +1,291 @@
+.CheckOutForm__review {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  textarea.CheckOutForm__textarea {
+    outline: none;
+    border: none;
+    border-bottom: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+    font-size: 14px;
+    color: #777777;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      border: none;
+      border-bottom: 0.5px solid rgba($color: #777777, $alpha: 1);
+    }
+  }
+}
+
+.CheckOutForm__userInput {
+  .CheckOutForm__review {
+    margin-right: 10px;
+  }
+
+  .CheckOutForm__userInput-div {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+
+  display: flex;
+
+}
+
+input.CheckOutForm__input {
+  outline: none;
+  border: none;
+  border-bottom: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+  font-size: 14px;
+  color: #777777;
+  width: 100%;
+  padding: 8px;
+
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: 0.5px solid rgba($color: #777777, $alpha: 1);
+  }
+}
+
+.select-input {
+  outline: none;
+  border: none;
+  border-bottom: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+  font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  color: #777777;
+
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: 0.5px solid rgba($color: #777777, $alpha: 1);
+  }
+
+}
+
+label.CheckOutForm__label {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+
+  span {
+    color: #E01020;
+    font-size: 16px;
+  }
+}
+
+.chechbox-label {
+  margin-left: 5px;
+
+}
+
+.CheckOutForm__checkbox-box {
+  margin: 10px 0;
+}
+
+.CheckOutForm-header {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0D1210;
+  text-align: left;
+  margin: 10px 0;
+
+  a {
+    text-decoration: underline;
+    color: #7CA196;
+    margin-left: 20px;
+
+  }
+}
+
+.CheckOutForm--form {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  h2 {
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
+    margin: 20px 0;
+    color: #0D1210;
+
+  }
+}
+
+.CheckOut__form {
+  display: grid;
+  margin: 40px 85px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  @include respond(big-phone) {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.CheckOutForm__checkbox {
+  p {
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #0D1210;
+
+  }
+
+  .CheckOutForm__p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+    color: #777777;
+  }
+}
+
+
+///
+
+
+.CheckOutPayment {
+  width: 46rem;
+  background: #E8E8E8;
+  padding: 26px 17px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  height: fit-content;
+  @include respond(big-phone) {
+    width: 100%;
+
+  }
+
+  h2 {
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0D1210;
+    text-align: center;
+  }
+
+  .CheckOutPayment__info {
+    background: #FFFFFF;
+    padding: 10px 15px;
+    margin: 20px 0;
+  }
+
+  .OrderPayment__productsec {
+
+    font-size: 14px;
+
+  }
+
+  .OrderPayment__total {
+    border-top: 0.5px solid #7777778C;
+  }
+
+  .CheckOutPayment__shipping--optionbox,
+  .OrderPayment__shipping--optionbox {
+    label {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      margin-left: 10px;
+    }
+  }
+  .CheckOutPayment_des {
+    background-color: #FFFFFF;
+    padding: 8px;
+    margin: 15px 0;
+
+    p {
+      text-align: left;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+
+.OrderPayment__paragraph {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 20px;
+  border-bottom: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+  border-top: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+  text-align: left;
+  padding: 15px 5px;
+
+}
+
+.CheckOutForm-btn {
+  width: 100%;
+}
+
+.CheckOutPayment {
+  .CheckOutPayment__shipping--optionbox, .OrderPayment__shipping--optionbox {
+    input {
+      border-color: #777777;
+      margin-left: 8px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+
+      border: 2px solid #999;
+      transition: 0.2s all linear;
+      position: relative;
+
+      &:checked {
+        border: 2px solid #777777;
+        background-color: #777777;
+        padding: 3px;
+      }
+    }
+  }
+
+  .OrderPayment__subtotal, .OrderPayment__shipping {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.OrderPayment__shipping--optionbox {
+  img {
+    margin: 0 5px;
+  }
+
+  label {
+    a {
+      color: #222F2B;
+      text-decoration-line: underline;
+    }
+  }
+}

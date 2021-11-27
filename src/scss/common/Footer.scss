@@ -1,0 +1,251 @@
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 17px;
+
+}
+
+.FooterTitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  color: #222F2B;
+  text-transform: uppercase;
+}
+
+.Footer__flowerexpress {
+
+}
+
+.footer-container {
+  display: flex;
+  padding: 56px 0 30px 0;
+  justify-content: space-between;
+  border-top: 0.5px solid #77777769;
+  border-bottom: 0.5px solid #77777769;
+  margin-top: 44px;
+  @include respond(tab-1023) {
+    flex-direction: column;
+  }
+}
+
+p.Footer__flowerexpress--p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  width: 23rem;
+  text-align: left;
+  color: #222F2B;
+  margin: 15px 0;
+}
+
+ul.list.Footer__flowerexpress--list {
+  li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+
+    img {
+      margin-right: 5px;
+      width: 14px;
+    }
+
+    p {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #777777;
+    }
+  }
+}
+
+.Footer__flowerexpress--social {
+
+  margin: 15px 0;
+
+}
+
+.footer__social {
+  img {
+    margin-right: 8px;
+    width: 16px;
+    margin-top: 15px;
+  }
+}
+
+.FooterBlogCard {
+  display: flex;
+  margin: 15px 0;
+
+  img {
+    width: 6.6rem;
+  }
+
+  .FooterBlogCard__info {
+    padding: 2px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a.FooterBlogCard__info--title {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      color: #222F2B;
+      cursor: pointer;
+    }
+  }
+
+  .FooterBlogCard__info--sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #999999;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+}
+
+.footer-list {
+  text-align: left;
+
+  li {
+    margin: 6px 0;
+
+    a {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #777777;
+    }
+  }
+}
+
+.footer__input {
+  border: 2px solid #62897D;
+  outline: none;
+  background-color: #FFFFFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 5px 8px;
+  width: 209px;
+  margin: 15px 0;
+
+  &::placeholder {
+    color: #777777;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &:focus {
+    border: 2px solid #62897D;
+    outline: none;
+  }
+}
+
+.footer__getnews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
+
+  button {
+    align-self: flex-end;
+  }
+}
+
+footer {
+  @include respond(big-phone) {
+    margin-bottom: 71px;
+  }
+}
+
+.FooterCopyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #222F2B;
+  text-align: left;
+  @include respond(big-phone) {
+    flex-direction: column;
+  }
+  //border-top: 0.5px solid rgba($color: #777777, $alpha: 0.4);
+  img {
+    margin-left: 10px;
+  }
+}
+
+.PhoneFooternav {
+  display: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #222F2B;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 8vh;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 9px 1px #959494;
+  z-index: 99999;
+  
+  .link-bold {
+    font-weight: bold;
+  }
+  .MuiButton-label {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+ 
+
+  span ,a {
+    color: #222F2B;
+  }
+
+  @include respond(big-phone) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.phoneProfileMenu {
+  top: 765px !important;
+}
+
+.PhoneFooternav--box {
+  &:focus, &:hover {
+    opacity: 0.5;
+  }
+
+  p {
+    font-size: 12px;
+
+  }
+
+  img {
+    width: 20px;
+  }
+}

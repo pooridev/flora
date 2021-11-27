@@ -1,0 +1,77 @@
+.SliderCommentCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span.MuiRating-root.MuiRating-sizeLarge {
+    margin: 20px 0;
+  }
+
+  .SliderCommentCart__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    width: 80%;
+    text-align: center;
+    text-align: center;
+
+
+    color: #777777;
+  }
+
+  .SliderCommentCart__name {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+
+    text-align: center;
+
+
+    color: #0D1210;
+  }
+
+  img {
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+
+  }
+
+}
+
+.UserCommentSlider {
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+    padding: 0;
+    cursor: pointer;
+    transition: width 0.4s ease-in-out;
+    margin-top: 20px;
+  }
+
+  li.slick-active {
+    width: 20px;
+  }
+
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+
+  }
+
+  margin: 50px 0;
+}
+
+.PhoneUserCommentSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,239 @@
+.BlogCard__inf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 27px;
+  transform: translate(-45px, 12px);
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px #00000029;
+  @include respond(big-phone) {
+    transform: translateX(0);
+  }
+
+  p.BlogCard__authorname {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #0D1210;
+    margin: 0 6px;
+  }
+
+  .BlogCard__caption {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+
+  }
+
+  .BlogCard__link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 24px;
+    color: #B8CCC6;
+    margin-top: 20px;
+  }
+
+  h4 {
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -14px;
+  }
+
+  .comment-num {
+    position: relative;
+    top: -6px;
+    width: 16px;
+    height: 16px;
+    background: $Primary__color;
+    border-radius: 50%;
+    color: #FFF;
+    left: -6px;
+  }
+
+  img.BlogCard__comment {
+    width: 19px;
+  }
+
+  img.BlogCard__share {
+    width: 17px;
+  }
+
+  .BlogCard__inforow {
+    margin: 20px 0;
+  }
+
+  img.BlogCard__authorpic {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+}
+
+.BlogCard__img {
+  position: relative;
+  width: 170%;
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+.BlogCard__inf--head {
+  background-color: $Primary__color;
+  color: #FFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 20px;
+  transform: translateY(-36px);
+}
+
+.newpost-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 999999;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+
+  i {
+    font-size: 20px;
+    color: #00000094;
+  }
+}
+
+.newpost-arrow.newpost-left-arrow-slider {
+  left: -30px;
+}
+
+.newpost-arrow.newpost-right-arrow-slider {
+  right: -30px;
+}
+
+.Newpost-sec {
+  &:hover {
+    .newpost-arrow {
+      opacity: 1;
+    }
+  }
+}
+
+.BlogCard__date {
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  left: 20px;
+  background: #F3F6F5;
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+
+  &--day {
+
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &--month {
+
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+.hoverShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000084;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.spinner {
+  width: 100%;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #FFFFFF;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 0.5s infinite ease-in-out both;
+  animation: sk-bouncedelay 0.5s infinite ease-in-out both;
+  animation-iteration-count: 1;
+
+
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.42s;
+  animation-delay: -0.42s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.26s;
+  animation-delay: -0.26s;
+}
+
+.spinner .bounce3 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0% {
+    -webkit-transform: translateX(-29px)
+  }
+  100% {
+    -webkit-transform: translateX(0)
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    -webkit-transform: translateX(-29px)
+  }
+  100% {
+    -webkit-transform: translateX(0)
+  }
+}
+
+.BlogCard {
+  align-items: center;
+  justify-content: center;
+  @include respond(big-phone) {
+    flex-direction: column;
+    width: 74%;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px #DBDADA;
+    overflow: hidden;
+  }
+
+}

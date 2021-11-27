@@ -1,0 +1,102 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == mini-phonee {
+    @media only screen and (max-width: 18em) {
+      //280px
+      @content;
+    }
+  }
+  @if $breakpoint == smallestt-phonee {
+    @media only screen and (max-width: 20em) {
+      //320px
+      @content;
+    }
+  }
+  @if $breakpoint == smallest-phone {
+    @media only screen and (max-width: 25em) {
+      //400px
+      @content;
+    }
+  }
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 31.25em) {
+      //500px
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == big-phone {
+    @media only screen and (max-width: 43.75em) {
+      //700px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-800 {
+    @media only screen and (max-width: 50.00em) {
+      //800
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      //900
+      @content;
+    }
+  }
+  @if $breakpoint == tab-landx {
+    @media only screen and (max-width: 62.5em) {
+      //1000
+      @content;
+    }
+  }
+  @if $breakpoint == tab-1023 {
+    @media only screen and (max-width: 1023px) {
+      //1023
+      @content;
+    }
+  }
+  @if $breakpoint == tab-1100 {
+    @media only screen and (max-width: 68.75em) {
+      //1100
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      //1200
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 81.25em) {
+      //1300
+      @content;
+    }
+  }
+  @if $breakpoint == desktopX {
+    //1400
+    @media only screen and (min-width: 87.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    //1600
+    @media only screen and (min-width: 100em) {
+      @content;
+    }
+  }
+  @if $breakpoint == bigest-desktop {
+    //1800
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+;
+

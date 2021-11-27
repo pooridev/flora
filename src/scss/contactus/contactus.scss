@@ -1,0 +1,308 @@
+.ContactusInfo__information {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+
+.ContactusInfoBox {
+  padding: 20px 0;
+  border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4);
+  margin-bottom: 15px;
+  width: 100%;
+
+  &__flexbox {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222F2B;
+
+  }
+
+  &__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+  }
+}
+
+.ContactusInfo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr );
+  grid-gap: 50px;
+  margin: 87px 0;
+  @include respond(big-phone) {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  .ContactusInfo__inputbox {
+    width: 100%;
+
+  }
+}
+
+
+.modal__bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .7);
+  height: 100vh;
+  z-index: 999;
+  animation: opacity 0.7s ease-in-out;
+  animation-iteration-count: 1;
+  opacity: 1;
+  @include respond(tab-port) {
+    height: 100%;
+    overflow-y: auto;
+
+  }
+}
+
+.modla__main {
+  background-color: #FFF;
+  width: 60vw;
+  animation: transformtoright 0.7s ease-in-out;
+  animation-iteration-count: 1;
+  transform: translateX(0);
+  @include respond(tab-port) {
+    height: 100%;
+    width: 80vw;
+
+  }
+}
+
+.ContactusModal {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  width: 64vw;
+  @include respond(tab-port) {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+  }
+
+  h4 {
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+}
+
+.ContactusModal--btn {
+  padding: 12px 20px;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #F3F3F3;
+  color: #3E3E3E;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.ContactusModal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  h4 {
+    font-size: 2rem;
+  }
+  form.ProductDetailReview__form {
+    width: 100%;
+
+    .ReviewForm__userInput.reviewform-row {
+      width: 100%;
+    }
+    .ReviewForm__textarea {
+      resize: vertical;
+    }
+  }
+
+  .ReviewForm__userInput .ReviewForm__userInput-div {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+    flex-direction: column;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .ReviewForm__label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+
+.contactus_btnbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ContactusModal__info {
+  background: #333333;
+  padding: 30px;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include respond(tab-port) {
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    line-height: 22px;
+  }
+}
+
+.ContactusModal__info--infobox {
+  margin: 31px 0;
+
+  i {
+    font-size: 30px;
+  }
+}
+
+.ContactusModal__info--infoboxicon {
+  width: 24px;
+  margin-right: 26px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.ContactusModal__info--body {
+  border-bottom: 0.5px solid rgba($color: #999999, $alpha: 0.4);
+}
+
+.contactus__social--circle {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ContactusModal__info--footer {
+  margin: 20px 0;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #FFF;
+  }
+}
+
+@keyframes transformtoright {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.SignatureDesign {
+  padding: 30px 0;
+  display: flex;
+  gap: 8rem;
+  font-family: Lato;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  @include respond(tab-port) {
+    padding: 30px 10px;
+  }
+  .SignatureDesign__info,
+  .ContactusModal__form {
+    flex: 1;
+  }
+  .SignatureDesign__info {
+    text-align: left;
+    p {
+      margin-top: 1rem;
+      text-align: justify;
+      word-spacing: 3px;
+      font-size: 1.6rem;
+
+    }
+  }
+  h4 {
+    color: #B8CCC6;
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .contact__box {
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    @include respond(tab-port) {
+      margin-top: 2rem;
+    }
+    i {
+      color: #B8CCC6;
+      border: 3px solid #B8CCC6;
+      padding: 2rem;
+      font-size: 3rem;
+    }
+    p:not(:last-child) {
+      font-size: 2rem;
+      margin-top: 1rem;
+      white-space: nowrap;
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
+    }
+    a {
+      color: #333333;
+    }
+  }
+}

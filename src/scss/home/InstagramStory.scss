@@ -1,0 +1,70 @@
+.Insta-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  opacity: 1;
+}
+
+.Insta-left-arrow-slider {
+  left: -30px;
+}
+
+.Insta-left-arrow-slider {
+  right: -30px;
+}
+
+.InstaStoryCard__hoverbox {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #0000006B;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+}
+
+.InstaStoryCard {
+  width: 19.3rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .InstaStoryCard__img {
+      -webkit-transition: transform 0.4s ease-in-out;
+      -moz-transition: transform 0.4s ease-in-out;
+      -o-transition: transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out;
+      transform: scale(1.2)
+    }
+
+    .InstaStoryCard__hoverbox {
+      -webkit-transition: opacity 0.4s ease-in-out;
+      -moz-transition: opacity 0.4s ease-in-out;
+      -o-transition: opacity 0.4s ease-in-out;
+      transition: opacity 0.4s ease-in-out;
+      opacity: 1;
+    }
+  }
+}
+
+.InstaStoryCard__info {
+  width: 100%;
+  font-family: Glacial Indifference;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  color: #FFF;
+
+  img {
+    margin-right: 5px;
+  }
+}
+
+img.InstaStoryCard__img {
+  @include respond(smallest-phone) {
+    width: 136px;
+  }
+}

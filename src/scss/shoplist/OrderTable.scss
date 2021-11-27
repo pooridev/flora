@@ -1,0 +1,97 @@
+.ShopList__order {
+  display: flex;
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+}
+
+.OrderTable {
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  @include respond(smallest-phone) {
+    overflow-x: auto;
+  }
+
+
+  
+  table {
+    @include respond(smallest-phone) {
+      overflow-x: auto;
+    }
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+  .subscription-form {
+    display: flex;
+    justify-content: space-between;
+    width: 30em;
+
+    select {
+      margin: 0 1rem;
+      width: 12rem;
+    }
+  }
+  .OrderTable__body--delete {
+    margin-left: 0;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0 22px;
+    @include respond(big-phone) {
+      padding: 0 5px;
+    }
+  }
+
+  &__header {
+    // display: grid;
+    // grid-template-columns: 4fr 2fr 2fr 1fr 2fr;
+    font-family: Glacial Indifference;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #222F2B;
+    padding: 10px 0;
+    justify-items: flex-start;
+    //   grid-column-gap: 10px;
+
+  }
+
+  &__body--box {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px 0;
+    justify-items: flex-start;
+    border-top: 0.5px solid #7777774F;
+    //  display: grid;
+    //  grid-column-gap: 10px;
+    // grid-template-columns: 4fr 2fr 2fr 1fr 2fr;
+    @include respond(big-phone) {
+      font-size: 13px;
+
+    }
+  }
+
+  .OrderTable__body--name {
+    display: flex;
+    align-items: center;
+    img {
+      width: 40%;
+    }
+    p {
+      text-align: left;
+      white-space: nowrap;
+      @include respond(big-phone) {
+        white-space: pre-line;
+      }
+    }
+  }
+}
+
+p.OrderTable__body--price {
+  display: flex;
+  align-items: center;
+}

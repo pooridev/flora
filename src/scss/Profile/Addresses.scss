@@ -1,0 +1,36 @@
+.addresses {
+	padding-bottom: 5rem;
+	.inputs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include respond(tab-landx) {
+			flex-direction: column;
+		}
+
+		input {
+			@extend .CheckOutForm__input;
+		}
+
+		.input-wrapper {
+			width: 40%;
+			margin-top: 1rem;
+			text-align: left;
+			label {
+				font-size: 1.2rem;
+			}
+			@include respond(tab-landx) {
+				width: 100%;
+			}
+		}
+	}
+	.update-address-btn {
+		@extend .third-btn;
+    margin-top: 1rem;
+    width: 40%;
+    float: left;
+    @include respond(tab-landx) {
+      width: 100%;
+    }
+	}
+}

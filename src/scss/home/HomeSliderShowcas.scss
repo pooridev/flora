@@ -1,0 +1,135 @@
+.HomeLeftSlidCart {
+	background-color: $Primary__color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0 20px;
+	position: relative;
+
+	h2 {
+		font-family: Glacial Indifference;
+		font-style: normal;
+		text-align: center;
+		font-weight: normal;
+		font-size: 36px;
+		color: #ffffff;
+	}
+
+	p {
+		position: absolute;
+		bottom: -51px;
+		left: 0;
+		font-size: 241px;
+		font-family: Glacial Indifference;
+		font-style: normal;
+		font-weight: bold;
+		color: rgba($color: #ffffff, $alpha: 0.31);
+		letter-spacing: -9px;
+	}
+
+	img {
+		max-height: 100%;
+		width: 100%;
+	}
+	a {
+		margin-top: 2rem;
+	}
+}
+
+img.slider-arrow {
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+
+img.slider-arrow.right-arrow-slider {
+	right: 13px;
+}
+
+img.slider-arrow.left-arrow-slider {
+	left: 13px;
+	z-index: 1000;
+}
+
+.slick-dots.slick-thumb {
+	bottom: 30px;
+	@include respond(tab-land) {
+		display: none;
+	}
+
+	p {
+		font-family: Lato;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: #777777;
+	}
+}
+
+.before-dot {
+	width: 10px;
+	background: #777777;
+	height: 2px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	margin: 0 8px;
+	padding: 0;
+	cursor: pointer;
+	-webkit-transition: width 0.4s ease-in-out;
+	-moz-transition: width 0.4s ease-in-out;
+	-o-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+.custompaging {
+	display: flex;
+	align-items: flex-end;
+}
+
+li.slick-active {
+	width: 50px;
+
+	.before-dot {
+		width: 40px !important;
+		animation: changewidth 0.7s ease-in-out;
+		animation-iteration-count: 1;
+		-webkit-transition: width 0.4s ease-in-out;
+		-moz-transition: width 0.4s ease-in-out;
+		-o-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+}
+
+@keyframes changewidth {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 40px;
+	}
+}
+
+.SliderCard {
+	// display: grid;
+	// grid-template-columns: 2fr 4fr;
+	// @include respond(tab-land) {
+	// 	grid-template-columns: 1fr;
+	// }
+}
+
+img.SliderCard-image {
+	@include respond(tab-land) {
+		display: none;
+	}
+}
+
+.SliderCard-image {
+}

@@ -1,0 +1,55 @@
+.btn-primary {
+  padding: 11px 20px;
+  background-color: transparent;
+  border: 2px solid rgba($color: #fff, $alpha: 0.4);
+  color: #FFFFFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.4s ease;
+  z-index: 999;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid rgba($color: #fff, $alpha: 1);
+
+  }
+}
+
+.btn-secondary {
+  padding: 11px 20px;
+  background-color: transparent;
+  border: 2px solid #E9E9E9;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  z-index: 999;
+  cursor: pointer;
+  color: #3E3E3E;
+
+  &:hover {
+    border: 2px solid #DCDCDC;
+    color: #333;
+  }
+}
+
+.third-btn {
+  padding: 11px 20px;
+  background-color: $Primary__color;
+  color: #FFFFFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.4s ease;
+  z-index: 9;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #9AABA6;
+  }
+}

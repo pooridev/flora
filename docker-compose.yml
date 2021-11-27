@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  flora-web:
+    image: ${CI_REGISTRY_IMAGE}:latest
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: none
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    ports:
+      - 3021:80
+    networks:
+      - main
+
+networks:
+  main:
+    external: true
+    name: FR-NET
